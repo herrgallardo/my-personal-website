@@ -1,7 +1,6 @@
 import Header from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
-
 import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import ThemeContextProvider from '@/context/ThemeContext'
@@ -26,7 +25,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             <Header />
             {children}
             <Footer />
-
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
