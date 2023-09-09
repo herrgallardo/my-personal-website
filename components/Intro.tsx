@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
+import { PiFileZipDuotone } from 'react-icons/pi'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/ActiveSectionContext'
 import Typewriter from './Typewriter'
@@ -68,7 +69,7 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 py-3 transition border rounded-full outline-none dark:text-white group dark:bg-white/20 bg-cyan-950/20 border-cyan-950/20 dark:border-white/20 text-cyan-950 px-7 focus:scale-110 hover:scale-110 hover:bg-cyan-950/40 active:scale-105"
+          className="flex items-center gap-2 py-3 mx-1 transition border rounded-full outline-none dark:text-white group dark:bg-white/20 bg-cyan-950/20 border-cyan-950/20 dark:border-white/20 text-cyan-950 px-7 focus:scale-110 hover:scale-110 hover:bg-cyan-950/40 active:scale-105"
           onClick={() => {
             setActiveSection('Contact')
             setTimeOfLastClick(Date.now())
@@ -79,12 +80,20 @@ const Intro = () => {
         </Link>
 
         <a
-          className="flex items-center gap-2 py-3 transition border rounded-full outline-none group dark:bg-white/20 bg-cyan-950/20 border-cyan-950/20 dark:border-white/20 text-cyan-950 dark:text-white px-7 focus:scale-110 hover:scale-110 hover:bg-cyan-950/40 active:scale-105"
-          href="/CV.pdf"
+          className="flex items-center gap-2 py-3 mx-1 transition border rounded-full outline-none group dark:bg-white/20 bg-cyan-950/20 border-cyan-950/20 dark:border-white/20 text-cyan-950 dark:text-white px-7 focus:scale-110 hover:scale-110 hover:bg-cyan-950/40 active:scale-105"
+          href="/docs/CV.pdf"
           download
         >
           Download CV{' '}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
+        </a>
+        <a
+          className="flex items-center gap-2 py-3 mx-1 transition border rounded-full outline-none group dark:bg-white/20 bg-cyan-950/20 border-cyan-950/20 dark:border-white/20 text-cyan-950 dark:text-white px-7 focus:scale-110 hover:scale-110 hover:bg-cyan-950/40 active:scale-105"
+          href="/docs/references.zip"
+          download
+        >
+          Download references{' '}
+          <PiFileZipDuotone className="transition opacity-60 group-hover:translate-y-1" />
         </a>
         <div className="flex space-x-5">
           <a
