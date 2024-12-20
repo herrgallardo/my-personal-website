@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import React from 'react'
-import SectionHeading from './SectionHeading'
-import { motion } from 'framer-motion'
-import { useSectionInView } from '@/lib/hooks'
+import React from "react"
+import SectionHeading from "./SectionHeading"
+import { motion } from "framer-motion"
+import { useSectionInView } from "@/lib/hooks"
 
 export default function About() {
-  const { ref } = useSectionInView('About')
+  const { ref } = useSectionInView("About")
 
   return (
     <div className="sm:pt-20">
@@ -21,28 +21,36 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
         <div className="mb-3">
           <p className="my-5">
-            Born with a deep interest in languages and cultures, I completed a
-            degree in Spanish and Linguistics at Lund University. This education
-            gave me an understanding of language structures, which later helped
-            me transition into coding and web development. I pursued a
-            Full-stack Development program at Teknikhögskolan i Lund, developing
-            skills in JavaScript, TypeScript, React, Next.js, HTML, CSS,
-            GraphQL, Git, and Jira.
+            Full-stack developer specializing in frontend technologies, with a
+            distinctive background in linguistics and international business
+            operations. My technical expertise includes React, TypeScript,
+            Next.js, and modern JavaScript frameworks, complemented by proven
+            experience at Axis Communications and 24HR digital agency.
           </p>
           <p className="my-5">
-            My journey has been diverse, with work experiences in Granada,
-            London, and Lund, including managerial roles and customer service.
-            I&apos;ve also held positions such as a Spanish language instructor
-            and have extensive experience in the service industry. These roles
-            have equipped me with collaboration, leadership, and resilience
-            skills.
+            My unconventional path from linguistics to software development has
+            equipped me with unique advantages. Language analysis skills
+            translate directly to code structure and syntax mastery, while
+            cross-cultural communication abilities were refined through work
+            across Spain, UK, and Sweden. These experiences are enhanced by
+            problem-solving capabilities developed through managing complex
+            language systems and technical implementations.
           </p>
           <p className="my-5">
-            After internships and jobs at Axis Communications and 24HR, I am now
-            looking for a full-time front-end developer role. I bring a unique
-            blend of linguistic knowledge, coding skills, and a wide range of
-            soft skills, eager to contribute to a team that values technical
-            ability and diverse experiences.
+            Recent achievements demonstrate my technical growth and
+            adaptability. I completed the Full-stack Development program at
+            Teknikhögskolan with top grades across all courses, successfully
+            delivered frontend projects during internships at Axis
+            Communications and 24HR, and effectively combined linguistic
+            expertise with technical skills to create intuitive user interfaces
+            and readable, maintainable code.
+          </p>
+          <p className="my-5">
+            Currently seeking a frontend developer role where I can leverage
+            both my technical proficiency and diverse professional background to
+            contribute to innovative web development projects. This combination
+            of skills positions me uniquely to bridge technical implementation
+            with effective communication and user-centered design thinking.
           </p>
         </div>
       </motion.section>

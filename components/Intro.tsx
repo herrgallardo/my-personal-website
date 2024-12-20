@@ -1,18 +1,18 @@
-'use client'
+"use client"
 
-import Image from 'next/image'
-import React from 'react'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { BsArrowRight } from 'react-icons/bs'
-import { HiDownload } from 'react-icons/hi'
-import { PiFileZipDuotone } from 'react-icons/pi'
-import { useSectionInView } from '@/lib/hooks'
-import { useActiveSectionContext } from '@/context/ActiveSectionContext'
-import Typewriter from './Typewriter'
+import Image from "next/image"
+import React from "react"
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { BsArrowRight } from "react-icons/bs"
+import { HiDownload } from "react-icons/hi"
+import { PiFileZipDuotone } from "react-icons/pi"
+import { useSectionInView } from "@/lib/hooks"
+import { useActiveSectionContext } from "@/context/ActiveSectionContext"
+import Typewriter from "./Typewriter"
 
 const Intro = () => {
-  const { ref } = useSectionInView('Home', 0.5)
+  const { ref } = useSectionInView("Home", 0.5)
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
@@ -27,8 +27,8 @@ const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: 'tween',
-              ease: 'easeInOut',
+              type: "tween",
+              ease: "easeInOut",
               duration: 1,
             }}
           >
@@ -53,8 +53,9 @@ const Intro = () => {
       >
         <span className="flex justify-center">Hello, my name is Antonio.</span>
         <span className="flex justify-center">
-          I am a front-end developer with foundational skills, eager to grow and
-          seeking a full-time position.
+          I am a front-end developer with proven React and TypeScript skills,
+          seeking a full-time role to build on my experience while expanding my
+          technical capabilities.
         </span>
         <Typewriter />
       </motion.h1>
@@ -71,11 +72,11 @@ const Intro = () => {
           href="#contact"
           className="flex items-center gap-2 py-3 mx-1 transition border rounded-full outline-none dark:text-white group dark:bg-white/20 bg-cyan-950/20 border-cyan-950/20 dark:border-white/20 text-cyan-950 px-7 focus:scale-110 hover:scale-110 hover:bg-cyan-950/40 active:scale-105"
           onClick={() => {
-            setActiveSection('Contact')
+            setActiveSection("Contact")
             setTimeOfLastClick(Date.now())
           }}
         >
-          Contact me here{' '}
+          Contact me here{" "}
           <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
@@ -84,7 +85,7 @@ const Intro = () => {
           href="/docs/CV.pdf"
           download
         >
-          Download CV{' '}
+          Download CV{" "}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
         <a
@@ -92,7 +93,7 @@ const Intro = () => {
           href="/docs/references.zip"
           download
         >
-          Download references{' '}
+          Download references{" "}
           <PiFileZipDuotone className="transition opacity-60 group-hover:translate-y-1" />
         </a>
         <div className="flex space-x-5">
@@ -102,7 +103,7 @@ const Intro = () => {
             target="_blank"
           >
             <Image
-              src={'/icons/linkedin-icon.png'}
+              src={"/icons/linkedin-icon.png"}
               alt="logo"
               height={72}
               width={72}
@@ -115,7 +116,7 @@ const Intro = () => {
             target="_blank"
           >
             <Image
-              src={'/icons/github-icon.png'}
+              src={"/icons/github-icon.png"}
               alt="logo"
               height={72}
               width={72}
