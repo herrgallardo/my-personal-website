@@ -1,3 +1,4 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 # Antonio Gallardo Girela's Personal Website
 
 Hello! I'm Antonio Gallardo Girela, a passionate web developer. This repository contains the source code for my personal website. I've built it using some of the latest and greatest technologies available in the web development world.
